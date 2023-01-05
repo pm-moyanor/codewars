@@ -19,15 +19,25 @@
 // console.log(cyclops(23));
 // console.log(cyclops(27));
 
-function collatz(n) {
-  const sequence = [];
+/////////////////////////////////////////////////////////////
 
-  while (n > 1) {
-    n % 2 === 0 ? (n = n / 2) : (n = n * 3 + 1);
-    sequence.push(n);
-  }
-  return sequence.length + 1;
-}
+// function collatz(n) {
+//   const sequence = [];
 
-console.log(collatz(20)); //8
-console.log(collatz(15)); //18
+//   while (n > 1) {
+//     n % 2 === 0 ? (n = n / 2) : (n = n * 3 + 1);
+//     sequence.push(n);
+//   }
+//   return sequence.length + 1;
+// }
+
+// console.log(collatz(20)); //8
+// console.log(collatz(15)); //18
+
+
+/////////////////////////////////////////////////////////////
+
+const reverseLetter = str => str.match(/[a-zA-Z]/g).reverse().join('')
+
+  console.log(reverseLetter("krishan"))
+  console.log(reverseLetter("ultr53o?n"))
