@@ -37,7 +37,28 @@
 
 /////////////////////////////////////////////////////////////
 
-const reverseLetter = str => str.match(/[a-zA-Z]/g).reverse().join('')
+// const reverseLetter = str => str.match(/[a-zA-Z]/g).reverse().join('')
 
-  console.log(reverseLetter("krishan"))
-  console.log(reverseLetter("ultr53o?n"))
+//   console.log(reverseLetter("krishan"))
+//   console.log(reverseLetter("ultr53o?n"))
+
+/////////////////////////////////////////////////////////////
+
+
+//   # Calculate the original price by dividing the sale price by the
+//   # discount percentage and then multiplying by 100
+//   original_price = sale_price / (1 - sale_percentage / 100)
+
+//   # Round the original price to two decimal places
+//   return round(original_price, 2)
+
+
+function discoverOriginalPrice(discountedPrice, salePercentage){
+
+    originalPrice = discountedPrice / (1 - salePercentage / 100)
+    return Math.round(originalPrice * 100 / 100)
+ 
+  }
+
+console.log(discoverOriginalPrice(75,25))
+console.log(discoverOriginalPrice(25,73,75))
