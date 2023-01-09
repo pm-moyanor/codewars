@@ -53,12 +53,39 @@
 //   return round(original_price, 2)
 
 
-function discoverOriginalPrice(discountedPrice, salePercentage){
+// function discoverOriginalPrice(discountedPrice, salePercentage){
 
-    originalPrice = discountedPrice / (1 - salePercentage / 100)
-    return Math.round(originalPrice * 100 / 100)
+//     originalPrice = discountedPrice / (1 - salePercentage / 100)
+//     return +(Math.round(num + "e+2")  + "e-2")
  
-  }
+//   }
 
-console.log(discoverOriginalPrice(75,25))
-console.log(discoverOriginalPrice(25,73,75))
+// console.log(discoverOriginalPrice(75,25))
+// console.log(discoverOriginalPrice(25,73,75))
+
+
+const consonantCount=(str) => {
+  const consonants = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ";
+  let count = 0;
+  for(const ch of str){
+    if(consonants.includes(ch)){
+      count += 1
+    }
+  }
+  return count
+  } 
+//   if (str === ''){return 0}
+//   let filtered = str.match(/[^aeiouAEIOU ,.]/g)
+
+//   if(filtered === null ){return 0}
+//   console.log(filtered)
+//   return filtered.length
+ 
+
+
+
+console.log(consonantCount('change'))
+console.log(consonantCount("this noun is not checked"))
+console.log(consonantCount ('impresive, but the first section brakes when clicked'))
+console.log(consonantCount(''))
+console.log(consonantCount('aaaa'))
